@@ -63,7 +63,7 @@ function Home() {
   />
 </div>
 
-      {/* Additional Images with Animation */}
+      <h1 className="text-center">Administrative Building</h1>
       <div className="d-flex justify-content-center">
         <img
           src="/images/admb1.jpg"
@@ -72,6 +72,7 @@ function Home() {
         />
       </div>
 
+      <h1 className="text-center">Front View of the Administrative Building</h1>
       <div className="d-flex justify-content-center">
         <img
           src="/images/admb2.jpg"
@@ -79,7 +80,8 @@ function Home() {
           className="img-fluid rounded mb-3 animate-pop reduced-width"
         />
       </div>
-
+      <h1 className="text-center">College of Nursing & Health Sciences Building</h1> <br >
+      </br>
       <div className="d-flex justify-content-center">
         <img
           src="/images/health2.jpg"

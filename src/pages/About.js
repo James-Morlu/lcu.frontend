@@ -75,46 +75,46 @@ function About() {
           </thead>
           <tbody>
             <tr>
-              <td>July 11, 2016</td>
+              <td>First-July 11, 2016</td>
               <td>146</td>
               <td>124</td>
               <td>22</td>
             </tr>
             <tr>
-              <td>Feb. 23,2017 & 2018(Combined)</td>
+              <td>Second-Feb. 23,2017 & 2018(Combined)</td>
               <td>413</td>
               <td>316</td>
-              <td>95</td>
+              <td>97</td>
             </tr>
             <tr>
-              <td>March 23,2019</td>
+              <td>Third-March 23,2019</td>
               <td>277</td>
               <td>189</td>
               <td>88</td>
             </tr>
             <tr>
-              <td>Dec. 19,2020</td>
+              <td>Fourth-Dec. 19,2020</td>
               <td>375</td>
               <td>299</td>
               <td>76</td>
             </tr>
             <tr>
-              <td>Nov. 26,2022</td>
+              <td> Fifth-Nov. 26,2022</td>
               <td>373</td>
               <td>263</td>
               <td>110</td>
             </tr>
             <tr>
-              <td>2024</td>
-              <td>____</td>
-              <td>____</td>
-              <td>____</td>
+              <td>Sixth-Dec. 2024</td>
+              <td>202</td>
+              <td>135</td>
+              <td>67</td>
             </tr>
             <tr>
               <th>Grand Total:</th>
-              <td>____</td>
-              <td>____</td>
-              <td>____</td>
+              <th>1,786</th>
+              <th>1,326</th>
+              <th>460</th>
             </tr>
           </tbody>
         </table>
