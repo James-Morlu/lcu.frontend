@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className="px-3" style={{ backgroundColor: "aqua", minHeight: "100vh", padding: "20px" }}>
+    <div className="px-3" style={{ backgroundColor: "purple", minHeight: "100vh", padding: "20px", color: "white"}}>
       <h4 className="text-center">History Profile of Lofa County University (LCU)</h4>
 
       <section>

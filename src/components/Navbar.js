@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
-      <div className="container bg-dark">
+      <div className="container bg-primary">
         <Link className="navbar-brand bg-info text-dark" to="/" style={{ textTransform: "uppercase" }}>
           LCU-Websit
         </Link>

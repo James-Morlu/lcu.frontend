@@ -36,8 +36,8 @@ const Contact = () => {
     <div className="container mt-4">
       {/* Fullscreen Image Modal */}
       {selectedImage && (
-        <div 
-          className="fullscreen-overlay" 
+        <div
+          className="fullscreen-overlay"
           onClick={() => setSelectedImage(null)}
           style={{
             position: "fixed",
@@ -47,8 +47,8 @@ const Contact = () => {
             zIndex: 1000
           }}
         >
-          <img 
-            src={selectedImage} 
+          <img
+            src={selectedImage}
             alt="Full View"
             style={{ maxWidth: "90%", maxHeight: "90%", borderRadius: "10px" }}
           />
@@ -57,43 +57,50 @@ const Contact = () => {
 
       {/* President's Card */}
       <div className="card text-center mx-auto mb-4 shadow-lg" style={{ maxWidth: "350px", backgroundColor: "gray", color: "#ffffff" }}>
-        <img 
-          src={president.image} 
-          className="card-img-top mx-auto" 
-          alt={president.name} 
+        <img
+          src={president.image}
+          className="card-img-top mx-auto"
+          alt={president.name}
           onClick={() => setSelectedImage(president.image)}
           style={{
             width: "180px", height: "180px", objectFit: "cover",
             objectPosition: "top", borderRadius: "50%", marginTop: "50px",
             cursor: "pointer"
-          }} 
+          }}
         />
         <div className="card-body">
           <h5 className="card-title">{president.name}</h5>
-          <p className="card-text"><strong>{president.position}</strong></p>
-          <p className="card-text"><strong>Contact:</strong> {president.contact}</p>
+          <p className="card-text">{president.position.replace("President & CEO/", "")}</p>
         </div>
       </div>
 
       <h2 className="text-center mb-4">Our Administrators</h2>
       <div className="row">
         {administrators.map((admin, index) => (
-          <div key={index} className="col-md-4 mb-3">
-            <div className="card shadow-sm" style={{ backgroundColor: "gray", color: "#ffffff" }}>
-              <img 
-                src={admin.image} 
-                className="card-img-top" 
-                alt={admin.name} 
+          <div key={index} className="col-md-3 mb-3">
+            <div className="card shadow-sm" style={{ backgroundColor: "blue", color: "#ffffff" }}>
+              <img
+                src={admin.image}
+                className="card-img-top"
+                alt={admin.name}
                 onClick={() => setSelectedImage(admin.image)}
                 style={{
                   width: "100%", height: "200px", objectFit: "cover",
-                  objectPosition: "top", borderRadius: "10px", cursor: "pointer"
-                }} 
+                  objectPosition: "top", borderRadius: "1px", cursor: "pointer"
+                }}
               />
               <div className="card-body text-center">
                 <h6 className="card-title">{admin.name}</h6>
-                <p className="card-text"><strong>{admin.position}</strong></p>
-                <p className="card-text"><strong>Contact:</strong> {admin.contact}</p>
+                <p className="card-text" style={{ fontSize: "0.9rem" }}>
+                  {admin.position
+                    .replace("Dean/", "Dean - ")
+                    .replace("Director of", "Dir. of")
+                    .replace("Vice President", "VP")
+                    .replace("Acting ", "")
+                    .replace("Associate ", "Assoc. ")
+                    .replace("College of ", "")
+                    .replace(" & ", " &\n")}
+                </p>
               </div>
             </div>
           </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 function Services() {
   return (
-    <div className="px-3" style={{ backgroundColor: "gray", minHeight: "100vh", padding: "20px", color:"white" }}>
+    <div className="px-3" style={{ backgroundColor: "dark", minHeight: "100vh", padding: "20px", color:"white" }}>
       <h4 className="text-center">Services Offered by Lofa County University (LCU)</h4>
 
       <section>
